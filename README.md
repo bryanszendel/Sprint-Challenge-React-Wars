@@ -24,15 +24,25 @@ In this challenge, create a web page that presents a styled list of Star Wars ch
 
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
-- [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
+- [X] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
-- [ ] What does it mean to _think_ in react?
+React is a JavaScript library that allows us to create reusable interface components that manage ever-changing data input from users. React helps us manage that changing data by manipulating the DOM via an engine called the Virtual DOM. React allows us to scale complex applications that can be quickly updated and changed based on input data. It prevents strain on browsers because most of the rendering is handled through the Virtual DOM. In summary, it is reproducible, allows for an easier mental model, helps us with organization of code,
 
-- [ ] Describe state.
+- [X] What does it mean to _think_ in react?
 
-- [ ] Describe props.
+Thinking in React is considering how data is passed around via props and how state can change. One has to consider the chain of events that leads to state change and reassignment of props. 
 
-- [ ] What are side effects, and how do you sync effects in a React component to state or prop changes?
+- [X] Describe state.
+
+State is data. It is the current data displaying within an element.
+
+- [X] Describe props.
+
+Props are properties you can give to an element. You can define them as you desire and you can pass them to other elements or components to transfer data down the chain.
+
+- [X] What are side effects, and how do you sync effects in a React component to state or prop changes?
+
+Side Effects are something unexpected happening outside the scope of a function. A common side effect is an infinite loop that occurs if you continually run a function. You can 'clean up' effects by adding a dependency array as the second argument within the effect hook. 
 
 ## Project Set Up
 
@@ -60,20 +70,20 @@ Follow these steps for completing your project:
 
 Your finished project must include all of the following requirements:
 
-- [ ] Fetch a list of Star Wars characters from the [Star Wars API (or SWAPI)](https://swapi.co/) and render them to the screen. 
-- [ ] Follow the documentation to learn how to fetch a list of "people". However, don't spend _too_ long on this. Here is a link for you to follow if you've looked around the docs for about 15 minutes or so and haven't found where to go - [Secret Link to Awesomeness 🤫](https://swapi.co/documentation#people).
-- [ ] Set the data you fetch to state.
-- [ ] Map over the list and render a component for each character on the page.
-- [ ] You must have at least one element for each star wars character in the data set.
-- [ ] The elements must be styled with either SemanticUI or styled-components - don't rely on browser default styles.
+- [X] Fetch a list of Star Wars characters from the [Star Wars API (or SWAPI)](https://swapi.co/) and render them to the screen. 
+- [X] Follow the documentation to learn how to fetch a list of "people". However, don't spend _too_ long on this. Here is a link for you to follow if you've looked around the docs for about 15 minutes or so and haven't found where to go - [Secret Link to Awesomeness 🤫](https://swapi.co/documentation#people).
+- [X] Set the data you fetch to state.
+- [X] Map over the list and render a component for each character on the page.
+- [X] You must have at least one element for each star wars character in the data set.
+- [X] The elements must be styled with either SemanticUI or styled-components - don't rely on browser default styles.
 
 #### Required best practices:
 
-- [ ] Consistent naming. Examples: variables, functions, Components, and file/folder organization.
-- [ ] Consistent spacing. Examples: line breaks, around arguments and before/after functions.
-- [ ] Consistent quotation usage.
-- [ ] Spell-check.
-- [ ] Schedule time to review, refine and reassess your work.
+- [X] Consistent naming. Examples: variables, functions, Components, and file/folder organization.
+- [X] Consistent spacing. Examples: line breaks, around arguments and before/after functions.
+- [X] Consistent quotation usage.
+- [X] Spell-check.
+- [X] Schedule time to review, refine and reassess your work.
 
 
 It is better to submit a challenge that meets [MVP](https://en.wikipedia.org/wiki/Minimum_viable_product) than one that attempts too much and fails.

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 import axios from 'axios'
 import JediCard from './components/JediCard'
+import { Container } from 'semantic-ui-react'
 
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
@@ -29,10 +30,11 @@ const App = () => {
   return (
     <div className="App">
       <h1 className="Header">React Wars</h1>
-      {people.map((num, index) => {
-        return <JediCard num={num} data={people} key={index}/>
-      })}
-      {/* <JediCard data={people}/> */}
+      <Container style={{ display: "flex", flexWrap: "wrap", justifyContent: "center"}}>
+        {people.map((num, index) => {
+          return <JediCard num={num} data={people} key={index}/>
+        })}
+      </Container>
     </div>
   );
 }
